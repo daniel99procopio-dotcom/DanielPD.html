@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de Estilização com CSS</title>
+  <style>
+    /* 1. Estilização dos links */
+    a {
+      color: red;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: lemonchiffon;
+    }
+
+    /* 2. Estilização dos parágrafos */
+    p {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Parágrafos imediatamente após h1 em negrito */
+    h1 + p {
+      font-weight: bold;
+    }
+
+    /* 3. Estilização da classe .destaque */
+    .destaque {
+      font-family: Arial, sans-serif;
+    }
+
+    p.destaque {
+      font-weight: bold;
+    }
+
+    strong.destaque {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Título Principal</h1>
+  <p>Este parágrafo não está imediatamente após o h1.</p>
+
+  <h1>Outro Título</h1>
+  <p>Este parágrafo está imediatamente após o h1 e ficará <strong>em negrito</strong>.</p>
+
+  <p>Visite o <a href="#">meu site</a> para mais informações.</p>
+
+  <p class="destaque">Este parágrafo tem a classe .destaque e está em negrito.</p>
+
+  <p>Este texto tem uma palavra em <strong class="destaque">destaque vermelho</strong>.</p>
+
+</body>
+</html>
